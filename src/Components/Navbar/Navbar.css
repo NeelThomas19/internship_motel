@@ -4,3 +4,7 @@
     width: 100%;
     color: black;
 }
+
+.nav-item .nav-link.active {
+    background-color: #079a4c;
+  }

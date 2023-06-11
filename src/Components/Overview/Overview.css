@@ -1,4 +1,13 @@
 .overview{
     background-color: antiquewhite;
-    height: 20rem;
+    height: 23rem;
+}
+
+.justify-content-around{
+    padding-top: 72px;
+    font-size: larger;
+}
+
+.explore{
+    width: 30rem;
 }

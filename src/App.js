@@ -6,10 +6,11 @@ import Amenities from './Components/Amenities/Amenities.jsx';
 import Location from './Components/Location/Location.jsx';
 import Policies from './Components/Policies/Policies.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
     <Navbar/>
     <Header/>
     <Overview/>
@@ -17,7 +18,7 @@ function App() {
     <Location/>
     <Amenities/>
     <Policies/>
-    </div>
+    </Router>
   );
 }
 
