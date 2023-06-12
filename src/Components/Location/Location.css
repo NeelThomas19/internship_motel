@@ -1,4 +1,33 @@
 .location{
     background-color: rgb(209, 140, 140);
-    height: 20rem;
+    height: max-content;
+    padding: 40px;
+    padding-bottom: 60px;
+}
+
+.nearby{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.col-9{
+    padding-bottom: 30px;
+}
+
+.col-12{
+    text-align: left;
+}
+
+.seemore{
+    background: transparent;
+    border: none;
+    color: rgb(16, 16, 160);
+}
+
+.clean li{
+    list-style: none;
+}
+
+.distancing li{
+    list-style: none;
 }
