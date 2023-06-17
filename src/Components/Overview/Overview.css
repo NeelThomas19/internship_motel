@@ -1,6 +1,6 @@
 .overview{
     background-color: antiquewhite;
-    height: 23rem;
+    height: max-content;
 }
 
 .justify-content-around{
