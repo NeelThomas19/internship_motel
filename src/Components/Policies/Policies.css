@@ -105,6 +105,10 @@
     margin-bottom: 5px;
   }
 
+  .rating{
+    color: gold;
+  }
+
   .review-list .comment {
     color: #666;
   }

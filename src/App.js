@@ -5,7 +5,7 @@ import Overview from './Components/Overview/Overview.jsx';
 import Amenities from './Components/Amenities/Amenities.jsx';
 import Location from './Components/Location/Location.jsx';
 import Policies from './Components/Policies/Policies.jsx';
-import Carousel from './Components/Carousel/Carousel.jsx';
+import Images from './Components/Carousel/Images.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ function App() {
     <Router>
     <Navbar/>
     <Header/>
-    <Carousel/>
+    <Images/>
     <Overview/>
     <Rooms/>
     <Location/>
