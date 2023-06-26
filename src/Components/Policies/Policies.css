@@ -1,7 +1,19 @@
 .policies{
-    background-color: rgb(183, 213, 152);
+    /* background-color: rgb(183, 213, 152); */
     height: max-content;
     padding: 40px;
+}
+
+.policies .container{
+  position: relative;
+  z-index: 2;
+  transform: translateZ(0);
+  transform: scale(0);
+  transition: transform 0.5s ease-in;
+}
+
+.policies.visible .container{
+  transform: scale(1) ;
 }
 
 .faq-question {
@@ -112,4 +124,3 @@
   .review-list .comment {
     color: #666;
   }
-

@@ -1,28 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import './Location.css';
-import { ImLocation } from "react-icons/im";
-import { IoRestaurant } from "react-icons/io5";
-import { AiFillCar } from "react-icons/ai";
-import { BsFillAirplaneFill } from "react-icons/bs";
-// import { GiBroom } from "react-icons/gi";
-// import { MdSocialDistance } from "react-icons/md";
+import './Cleaning.css';
+// import { ImLocation } from "react-icons/im";
+// import { IoRestaurant } from "react-icons/io5";
+// import { AiFillCar } from "react-icons/ai";
+// import { BsFillAirplaneFill } from "react-icons/bs";
+import { GiBroom } from "react-icons/gi";
+import { MdSocialDistance } from "react-icons/md";
 
-function Location() {
-  // const [isExpanded, setisExpanded] = useState(false);
+function Cleaning() {
+//   const [isExpanded, setisExpanded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
-  // const toggleExpanded = () =>{
-  //   setisExpanded(!isExpanded);
-  // };
+//   const toggleExpanded = () =>{
+//     setisExpanded(!isExpanded);
+//   };
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.pageYOffset;
-      const locationElement = document.getElementById('location');
+      const cleaningElement = document.getElementById('cleaning');
 
-      if (locationElement) {
-        const elementOffsetTop = locationElement.offsetTop;
-        const elementHeight = locationElement.offsetHeight;
+      if (cleaningElement) {
+        const elementOffsetTop = cleaningElement.offsetTop;
+        const elementHeight = cleaningElement.offsetHeight;
 
         // Calculate the visible range based on element position and window height
         const visibleRangeStart = scrollPosition + window.innerHeight * 0.4;
@@ -40,11 +40,11 @@ function Location() {
     };
   }, []);
 
-  // const text = 'Searay Motel is located close to Wildwood Beach, and has plenty to offer. Guests can connect to free in-room WiFi.';
+//   const text = 'Searay Motel is located close to Wildwood Beach, and has plenty to offer. Guests can connect to free in-room WiFi.';
   return (
-    <div id='location' className={`location ${isVisible ? 'visible' : ''}`}>
+    <div id='cleaning' className={`cleaning ${isVisible ? 'visible' : ''}`}>
       <div className='container text-center'>
-      <div class="row">
+      {/* <div class="row">
       <div class="col-6">
         <h4>About this area</h4>
         <h5>Wildwood</h5>
@@ -80,7 +80,7 @@ function Location() {
       </div>
       </div>
       </div>
-      {/* <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
+      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className="row">
         <div className="col-12">
           <h4>About this property</h4>
@@ -125,7 +125,7 @@ function Location() {
             </div>
         </div>
         </div>
-      </div>
+      </div> */}
       <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className="row">
         <div className="col-12">
@@ -149,10 +149,10 @@ function Location() {
         </div>
       </div>
       </div>
-      </div> */}
+      </div>
       </div>
     </div>
   )
 }
 
-export default Location
+export default Cleaning

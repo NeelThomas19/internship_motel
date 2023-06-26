@@ -4,7 +4,7 @@
     /* background-color: rgb(168, 168, 230); */
     height: 30rem;
     overflow: hidden;
-    margin-top: 24px;
+    margin-top: 54px;
 }
 
 .image-container {
@@ -22,6 +22,7 @@
 
 .image-container .image-text {
     position: absolute;
+    padding-top: 50px;
     top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);

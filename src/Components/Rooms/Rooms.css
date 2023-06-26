@@ -1,46 +1,47 @@
 .room-availability {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 40px;
-    background-color: #79bdd7;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .room-availability__title {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .room-availability__input-group {
-    margin-bottom: 20px;
-  }
-  
-  .room-availability__label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .room-availability__input,
-  .room-availability__select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .room-availability__submit {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .room-availability__submit:hover {
-    background-color: #0056b3;
-  }
-  
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #79bdd7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.room-availability__title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.room-availability__input-group {
+  margin-bottom: 20px;
+}
+
+.room-availability__label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.room-availability__input,
+.room-availability__select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.room-availability__submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.room-availability__submit:hover {
+  background-color: #0056b3;
+}

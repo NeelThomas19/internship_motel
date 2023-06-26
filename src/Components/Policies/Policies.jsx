@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Policies.css';
 
 const ReviewForm = ({ onReviewSubmit }) => {
@@ -101,7 +101,7 @@ const ReviewForm = ({ onReviewSubmit }) => {
       </div>
       </div>
       </div>
-      <hr style={{height:'8px' , backgroundColor:'green', border:'none'}}/>
+      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className='container text-center'>
       <div className="row">
         <div className="col-12">
@@ -138,7 +138,7 @@ const ReviewForm = ({ onReviewSubmit }) => {
       </div>
       </div>
       </div>
-      <hr style={{height:'8px' , backgroundColor:'green', border:'none'}}/>
+      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className='container text-center'>
       <div className="row">
         <div className="col-12">
@@ -164,7 +164,7 @@ const ReviewForm = ({ onReviewSubmit }) => {
       </div>
       </div>
       </div>
-      <hr style={{height:'8px' , backgroundColor:'green', border:'none'}}/>
+      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className="review-form">
       <h2>Customer Review</h2>
       <form onSubmit={handleSubmit}>
@@ -221,15 +221,41 @@ const ReviewList = ({ reviews }) => {
   );
 };
 
-const Policies = () => {
+function Policies () {
+  const [isVisible, setIsVisible] = useState(false);
   const [reviews, setReviews] = useState([]);
 
   const handleReviewSubmit = (review) => {
     setReviews([...reviews, review]);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset;
+      const policiesElement = document.getElementById('policies');
+
+      if (policiesElement) {
+        const elementOffsetTop = policiesElement.offsetTop;
+        const elementHeight = policiesElement.offsetHeight;
+
+        // Calculate the visible range based on element position and window height
+        const visibleRangeStart = scrollPosition + window.innerHeight * 0.4;
+        const visibleRangeEnd = scrollPosition + window.innerHeight * 0.6;
+
+        // Check if the element is within the visible range
+        const isVisible = elementOffsetTop + elementHeight > visibleRangeStart && elementOffsetTop < visibleRangeEnd;
+        setIsVisible(isVisible);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='policies'>
+    <div className={`policies ${isVisible ? 'visible' : ''}`}>
       <ReviewForm onReviewSubmit={handleReviewSubmit} />
       <ReviewList reviews={reviews} />
     </div>

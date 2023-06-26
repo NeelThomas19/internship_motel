@@ -1,0 +1,38 @@
+.cleaning {
+    /* background-image: url('C:/Users/neelt/OneDrive/Documents/Projects/SeaRay-Motel/public/images/308612485.jpg'); */
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    overflow: hidden;
+    position: relative;
+    height: max-content;
+    padding: 10px;
+    padding-bottom: 40px;
+    opacity: 0; /* Initially hide the component */
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.9s ease-in-out;
+    color: black;
+  }
+  .cleaning.visible {
+    opacity: 1; /* Show the component with a smooth transition */
+    transform: translateY(0);
+  }
+
+  .cleaning .container {
+    position: relative;
+    z-index: 2;
+    transform: translateZ(0);
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .cleaning.visible .container {
+    transform: scale(1);
+  }
+
+  .cleaning h4,
+  h5,
+  p {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }

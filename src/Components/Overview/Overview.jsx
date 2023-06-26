@@ -1,5 +1,5 @@
 // import React, { useRef } from 'react'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Overview.css'
 import { FaParking, FaSnowflake} from "react-icons/fa";
 import { BiWifi } from "react-icons/bi";
@@ -17,9 +17,35 @@ import { ImLocation } from "react-icons/im";
 //       toast.show();
 //     }
 //   };
-const Overview = () => {
+function Overview(){
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset;
+      const overviewElement = document.getElementById('overview');
+
+      if (overviewElement) {
+        const elementOffsetTop = overviewElement.offsetTop;
+        const elementHeight = overviewElement.offsetHeight;
+
+        // Calculate the visible range based on element position and window height
+        const visibleRangeStart = scrollPosition + window.innerHeight * 0.4;
+        const visibleRangeEnd = scrollPosition + window.innerHeight * 0.6;
+
+        // Check if the element is within the visible range
+        const isVisible = elementOffsetTop + elementHeight > visibleRangeStart && elementOffsetTop < visibleRangeEnd;
+        setIsVisible(isVisible);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <div id='overview' className='overview'>
+    <div id='overview' className={`overview ${isVisible ? 'visible' : ''}`}>
       <div className='container text-center'>
       <div class="row justify-content-around">
     <div class="col-4">
@@ -48,19 +74,19 @@ const Overview = () => {
     <div class="col-4 explore">
       <h4>Explore the area</h4>
     <div class="row">
-      <div class="col-md-4"><ImLocation/>Wildwood Boardwalk</div>
+      <div class="col-md-4"><ImLocation size={72}/>Wildwood Boardwalk</div>
       <div class="col-md-4 offset-md-4">2 min walk</div>
     </div>
     <div class="row">
-      <div class="col-md-4"><ImLocation/>Wildwood Beach</div>
+      <div class="col-md-4"><ImLocation size={62}/>Wildwood Beach</div>
       <div class="col-md-4 offset-md-4">5 min walk</div>
     </div>
     <div class="row">
-      <div class="col-md-4"><ImLocation/>Morey's Piers</div>
+      <div class="col-md-4"><ImLocation size={42}/>Morey's Piers</div>
       <div class="col-md-4 offset-md-4">10 min walk</div>
     </div>
     <div class="row">
-      <div class="col-md-4"><BsFillAirplaneFill/>Cape May, NJ(WWD-Cape May County)</div>
+      <div class="col-md-4"><BsFillAirplaneFill size={75}/>Cape May, NJ(WWD-Cape May County)</div>
       <div class="col-md-4 offset-md-4">15 min drive</div>
     </div>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './Amenities.css';
 import { AiOutlineWifi } from "react-icons/ai";
 import { MdLocalParking, MdFamilyRestroom, MdOutdoorGrill, MdAccessible, MdBalcony } from "react-icons/md";
@@ -6,9 +6,35 @@ import { FaConciergeBell, FaBed, FaBath } from "react-icons/fa";
 import { BiPlusCircle, BiDrink } from "react-icons/bi";
 import { BsFillFilePlayFill } from "react-icons/bs";
 
-const Amenities = () => {
+function Amenities () {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset;
+      const amenitiesElement = document.getElementById('amenities');
+
+      if (amenitiesElement) {
+        const elementOffsetTop = amenitiesElement.offsetTop;
+        const elementHeight = amenitiesElement.offsetHeight;
+
+        // Calculate the visible range based on element position and window height
+        const visibleRangeStart = scrollPosition + window.innerHeight * 0.4;
+        const visibleRangeEnd = scrollPosition + window.innerHeight * 0.6;
+
+        // Check if the element is within the visible range
+        const isVisible = elementOffsetTop + elementHeight > visibleRangeStart && elementOffsetTop < visibleRangeEnd;
+        setIsVisible(isVisible);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <div id='amenities' className='amenities'>
+    <div id='amenities' className={`amenities ${isVisible ? 'visible' : ''}`}>
       <div className='container text-center'>
       <div className="row">
         <div className="col-12">
@@ -62,7 +88,7 @@ const Amenities = () => {
       </div>
       </div>
       </div>
-      <hr style={{height:'8px' , backgroundColor:'blue', border:'none'}}/>
+      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className='container text-center'>
       <div className="row">
         <div className="col-12">

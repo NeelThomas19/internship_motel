@@ -1,4 +1,4 @@
-.overview{
+/* .overview{
     background-color: antiquewhite;
     height: max-content;
 }
@@ -10,4 +10,85 @@
 
 .explore{
     width: 30rem;
+} */
+
+/* .parallax {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  } */
+
+  /* Add the following CSS styles to your Overview.css file */
+
+.overview {
+  /* background-image: url('C:/Users/neelt/OneDrive/Documents/Projects/SeaRay-Motel/public/images/308634967.jpg'); */
+  height: max-content;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding: 40px;
+  padding-bottom: 60px;
+  opacity: 0; /* Initially hide the component */
+  transition: opacity 0.8s ease;
+  color: black;
 }
+
+.overview.visible {
+  opacity: 1; /* When the component is visible, set opacity to 1 */
+}
+
+.overview .container {
+  position: relative;
+  z-index: 2;
+  transform: translateZ(0);
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.overview.visible .container {
+  transform: scale(1);
+}
+.overview h4 {
+  font-size: 44px;
+  padding-top: 30px;
+  transition: opacity 0.5s ease; /* Add transition effect for heading */
+}
+
+.overview p.card-text {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: opacity 0.5s ease; /* Add transition effect for paragraph */
+}
+
+.overview .explore {
+  color: black;
+  margin-top: 0px;
+  transition: opacity 0.5s ease; /* Add transition effect for explore section */
+}
+
+.overview .explore .row {
+  margin-bottom: 15px;
+}
+
+.overview .explore .col-md-4 {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  transition: opacity 0.5s ease; /* Add transition effect for explore section */
+}
+
+.card-text{
+  color: black;
+}
+
+
