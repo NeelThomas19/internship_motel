@@ -70,14 +70,14 @@ const FAQ = () => {
             <div className="col-5">
             {faqData.map((faq, index) => (
         <div key={index}>
-          <button
+          <button style={{fontSize:'20px'}}
             className={`faq-question ${index === activeIndex ? 'active' : ''}`}
             onClick={() => handleClick(index)}
           >
             <span className={`arrow ${index === activeIndex ? 'active' : ''}`} />
             {faq.question}
           </button>
-          {index === activeIndex && <p className="faq-answer">{faq.answer}</p>}
+          {index === activeIndex && <p style={{fontSize:'20px'}} className="faq-answer">{faq.answer}</p>}
         </div>
         ))}
         </div>

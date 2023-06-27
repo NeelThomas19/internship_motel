@@ -46,47 +46,47 @@ function RoomAmenities () {
             <div className="col-4">
             <h5><FaBed/>Bedroom</h5>
             <ul className='clean'>
-              <li>Air Conditioning</li>
-              <li>Bed Sheets</li>
-              <li>Double sofa bed</li>
-              <li>Free extra-futon mattress</li>
-              <li>Heating</li>
+              <li style={{fontSize:'20px'}}>Air Conditioning</li>
+              <li style={{fontSize:'20px'}}>Bed Sheets</li>
+              <li style={{fontSize:'20px'}}>Double sofa bed</li>
+              <li style={{fontSize:'20px'}}>Free extra-futon mattress</li>
+              <li style={{fontSize:'20px'}}>Heating</li>
             </ul>
             <h5><FaBath/>Bathroom</h5>
             <ul className='distancing'>
-              <li>Shampoo</li>
-              <li>Shower/bath combination</li>
-              <li>Soap</li>
-              <li>Toilet paper</li>
-              <li>Towels</li>
+              <li style={{fontSize:'20px'}}>Shampoo</li>
+              <li style={{fontSize:'20px'}}>Shower/bath combination</li>
+              <li style={{fontSize:'20px'}}>Soap</li>
+              <li style={{fontSize:'20px'}}>Toilet paper</li>
+              <li style={{fontSize:'20px'}}>Towels</li>
             </ul>
             <h5><BsFillFilePlayFill/>Entertainment</h5>
             <ul>
-              <li>32-inch flat-screen TV</li>
-              <li>TV channels</li>
+              <li style={{fontSize:'20px'}}>32-inch flat-screen TV</li>
+              <li style={{fontSize:'20px'}}>TV channels</li>
             </ul>
             <br/>
         </div>
             <div className="col-4">
             <h5><BiDrink/>Food and Drinks</h5>
             <ul className='clean'>
-              <li>Coffee/Tea maker</li>
-              <li>Microwave</li>
-              <li>Paper Towels</li>
-              <li>Fridge</li>
+              <li style={{fontSize:'20px'}}>Coffee/Tea maker</li>
+              <li style={{fontSize:'20px'}}>Microwave</li>
+              <li style={{fontSize:'20px'}}>Paper Towels</li>
+              <li style={{fontSize:'20px'}}>Fridge</li>
             </ul>
             <h5><MdBalcony/>Outdoor Space</h5>
             <ul className='distancing'>
-              <li>Balcony</li>
+              <li style={{fontSize:'20px'}}>Balcony</li>
             </ul>
             <h5><BiPlusCircle/>More</h5>
             <ul>
-              <li>Desk.</li>
-              <li>Eco-friendly cleaning products provided</li>
-              <li>Individually decorated</li>
-              <li>Individually furnished</li>
-              <li>Iron/ironing board</li>
-              <li>Restaurant dinning guide</li>
+              <li style={{fontSize:'20px'}}>Desk.</li>
+              <li style={{fontSize:'20px'}}>Eco-friendly cleaning products provided</li>
+              <li style={{fontSize:'20px'}}>Individually decorated</li>
+              <li style={{fontSize:'20px'}}>Individually furnished</li>
+              <li style={{fontSize:'20px'}}>Iron/ironing board</li>
+              <li style={{fontSize:'20px'}}>Restaurant dinning guide</li>
             </ul>
             <br/>
         </div>

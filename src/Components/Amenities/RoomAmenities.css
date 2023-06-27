@@ -2,12 +2,12 @@
     /* background-color: rgb(159, 222, 222); */
     height: max-content;
     min-height: 50vh;
-    padding: 30px;
+    padding: 15px;
     opacity: 0; /* Initially hide the component */
     transform: translateY(20px);
     transition: opacity 0.5s ease-in, transform 0.9s ease-in;
     color: black;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 
 .roomamenities.visible{
@@ -29,4 +29,12 @@
 
 li{
     list-style:none;
+}
+
+h4{
+    font-size: 28px;
+}
+
+h5{
+    font-size: 28px;
 }

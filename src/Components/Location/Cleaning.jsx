@@ -136,16 +136,16 @@ function Cleaning() {
             <div className="col-4">
             <h5><GiBroom />Enhanced cleaning measures</h5>
             <ul className='clean'>
-              <li>Disinfectant is ued to clean the property.</li>
-              <li>High-touched surfaces are cleaned and disinfected.</li>
-              <li>Sheets and towels are washed at 60&deg;C or hotter.</li>
+              <li style={{fontSize:'20px'}}>Disinfectant is ued to clean the property.</li>
+              <li style={{fontSize:'20px'}}>High-touched surfaces are cleaned and disinfected.</li>
+              <li style={{fontSize:'20px'}}>Sheets and towels are washed at 60&deg;C or hotter.</li>
             </ul>
             <h5><MdSocialDistance />Social Distancing</h5>
             <ul className='distancing'>
-              <li>Protective shields in place at main contact areas.</li>
+              <li style={{fontSize:'20px'}}>Protective shields in place at main contact areas.</li>
             </ul>
             <br/>
-            <p>This information is provided by our partners.</p>
+            <p style={{fontSize:'20px'}}>This information is provided by our partners.</p>
         </div>
       </div>
       </div>

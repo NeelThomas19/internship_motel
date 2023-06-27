@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 /* .overview{
     background-color: antiquewhite;
     height: max-content;
@@ -57,9 +59,10 @@
   transform: scale(1);
 }
 .overview h4 {
-  font-size: 44px;
+  font-size: 30px;
   padding-top: 30px;
   transition: opacity 0.5s ease; /* Add transition effect for heading */
+  font-family: 'Merienda', cursive;
 }
 
 .overview p.card-text {
@@ -68,6 +71,7 @@
   align-items: center;
   gap: 10px;
   transition: opacity 0.5s ease; /* Add transition effect for paragraph */
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .overview .explore {
@@ -83,8 +87,13 @@
 .overview .explore .col-md-4 {
   display: flex;
   align-items: center;
-  font-size: 22px;
+  /* font-size: 22px; */
   transition: opacity 0.5s ease; /* Add transition effect for explore section */
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.offset-md-4{
+  font-size: 20px;
 }
 
 .card-text{

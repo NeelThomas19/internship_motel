@@ -40,36 +40,36 @@ function Policies () {
             <div className="col-4">
             <h5>Check-in</h5>
             <ul className='clean'>
-              <li>Check-in from 3:00 PM to 5:00 AM</li>
-              <li>Late Check-in subject to availability</li>
-              <li>Minimum check-in age-25</li>
+              <li style={{fontSize:'20px'}}>Check-in from 3:00 PM to 5:00 AM</li>
+              <li style={{fontSize:'20px'}}>Late Check-in subject to availability</li>
+              <li style={{fontSize:'20px'}}>Minimum check-in age-25</li>
             </ul>
             <h5>Special check-in instructions</h5>
             <ul className='distancing'>
-              <li>Front desk staff will greet guests on arrival</li>
+              <li style={{fontSize:'20px'}}>Front desk staff will greet guests on arrival</li>
             </ul>
             <h5>Access Methods</h5>
             <ul>
-              <li>Staffed front desk</li>
+              <li style={{fontSize:'20px'}}>Staffed front desk</li>
             </ul>
             <h5>Pets</h5>
             <ul>
-              <li>Pets not allowed</li>
+              <li style={{fontSize:'20px'}}>Pets not allowed</li>
             </ul>
             <h5>Children and Extra beds</h5>
             <ul>
-              <li>Children are welcome</li>
+              <li style={{fontSize:'20px'}}>Children are welcome</li>
             </ul>
             <h5>Payments types at the property</h5>
             <ul>
-              <li>Pets not allowed</li>
+              <li style={{fontSize:'20px'}}>Pets not allowed</li>
             </ul>
             <br/>
         </div>
             <div className="col-4">
             <h5>Check-out</h5>
             <ul className='clean'>
-              <li>Check-out before 10:00 AM</li>
+              <li style={{fontSize:'20px'}}>Check-out before 10:00 AM</li>
             </ul>
         </div>
       </div>

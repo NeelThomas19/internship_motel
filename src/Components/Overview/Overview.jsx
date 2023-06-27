@@ -74,19 +74,19 @@ function Overview(){
     <div class="col-4 explore">
       <h4>Explore the area</h4>
     <div class="row">
-      <div class="col-md-4"><ImLocation size={72}/>Wildwood Boardwalk</div>
+      <div class="col-md-4" style={{fontSize: '18px'}}><ImLocation size={62}/>Wildwood Boardwalk</div>
       <div class="col-md-4 offset-md-4">2 min walk</div>
     </div>
     <div class="row">
-      <div class="col-md-4"><ImLocation size={62}/>Wildwood Beach</div>
+      <div class="col-md-4" style={{fontSize: '22px'}}><ImLocation size={62}/>Wildwood Beach</div>
       <div class="col-md-4 offset-md-4">5 min walk</div>
     </div>
     <div class="row">
-      <div class="col-md-4"><ImLocation size={42}/>Morey's Piers</div>
+      <div class="col-md-4" style={{fontSize: '22px'}}><ImLocation size={42}/>Morey's Piers</div>
       <div class="col-md-4 offset-md-4">10 min walk</div>
     </div>
     <div class="row">
-      <div class="col-md-4"><BsFillAirplaneFill size={75}/>Cape May, NJ(WWD-Cape May County)</div>
+      <div class="col-md-4" style={{fontSize: '22px'}}><BsFillAirplaneFill size={75}/>Cape May, NJ(WWD-Cape May County)</div>
       <div class="col-md-4 offset-md-4">15 min drive</div>
     </div>
     </div>

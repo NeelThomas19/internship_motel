@@ -20,7 +20,7 @@ function Amenities () {
 
         // Calculate the visible range based on element position and window height
         const visibleRangeStart = scrollPosition + window.innerHeight * 0.2;
-        const visibleRangeEnd = scrollPosition + window.innerHeight * 0.8;
+        const visibleRangeEnd = scrollPosition + window.innerHeight * 0.95;
 
         // Check if the element is within the visible range
         const isVisible = elementOffsetTop + elementHeight > visibleRangeStart && elementOffsetTop < visibleRangeEnd;
@@ -45,42 +45,42 @@ function Amenities () {
             <div className="col-4">
             <h5><AiOutlineWifi/>Internet</h5>
             <ul className='clean'>
-              <li>Available in all rooms: Free WiFi</li>
-              <li>Available in some public areas: Free WiFi</li>
+              <li style={{fontSize:'20px'}}>Available in all rooms: Free WiFi</li>
+              <li style={{fontSize:'20px'}}>Available in some public areas: Free WiFi</li>
             </ul>
             <h5><MdLocalParking/>Parking and Public Transport</h5>
             <ul className='distancing'>
-              <li>Free self parking on site</li>
-              <li>Limited on-site parking(max. 1 space per unit)</li>
+              <li style={{fontSize:'20px'}}>Free self parking on site</li>
+              <li style={{fontSize:'20px'}}>Limited on-site parking(max. 1 space per unit)</li>
             </ul>
             <h5><MdFamilyRestroom/>Family Friendly</h5>
             <ul>
-              <li>Microwave</li>
-              <li>Fridge</li>
-              <li>Sofa bed</li>
+              <li style={{fontSize:'20px'}}>Microwave</li>
+              <li style={{fontSize:'20px'}}>Fridge</li>
+              <li style={{fontSize:'20px'}}>Sofa bed</li>
             </ul>
             <h5><FaConciergeBell/>Guest Service</h5>
             <ul>
-              <li>24-hour front desk</li>
+              <li style={{fontSize:'20px'}}>24-hour front desk</li>
             </ul>
             <br/>
         </div>
             <div className="col-4">
             <h5><MdOutdoorGrill/>Outdoors</h5>
             <ul className='clean'>
-              <li>BBQ Grills</li>
+              <li style={{fontSize:'20px'}}>BBQ Grills</li>
             </ul>
             <h5><MdAccessible/>Accessibility</h5>
             <ul className='distancing'>
-              <li>If you have any requests for specific accesibility needs, please contact the property using the information on the reservation confirmation received after booking.</li>
-              <li>This property does not have any lifts</li>
-              <li>Handrails in stairwells</li>
-              <li>Upper floors accessible by stairs only</li>
-              <li>Well-lit path to entrance</li>
+              <li style={{fontSize:'20px'}}>If you have any requests for specific accesibility needs, please contact the property using the information on the reservation confirmation received after booking.</li>
+              <li style={{fontSize:'20px'}}>This property does not have any lifts</li>
+              <li style={{fontSize:'20px'}}>Handrails in stairwells</li>
+              <li style={{fontSize:'20px'}}>Upper floors accessible by stairs only</li>
+              <li style={{fontSize:'20px'}}>Well-lit path to entrance</li>
             </ul>
             <h5><BiPlusCircle/>More</h5>
             <ul>
-              <li>Designated smoking areas</li>
+              <li style={{fontSize:'20px'}}>Designated smoking areas</li>
             </ul>
             <br/>
         </div>

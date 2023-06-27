@@ -89,29 +89,29 @@ function AboutProperty() {
             </div>
             <div className="col">
             <h5>SeaRay Motel</h5>
-            <p>Motel near wildwood Boardwalk</p>
+            <p style={{fontSize:'20px'}}>Motel near wildwood Boardwalk</p>
             <div className={isExpanded ? 'content expanded' : 'content'}>
             {isExpanded && (
               <div>
-              <p>{isExpanded ? text : `${text.slice(0, 5)}...`}</p>
-              <p>Additional perks include:</p>
+              <p style={{fontSize:'20px'}}>{isExpanded ? text : `${text.slice(0, 5)}...`}</p>
+              <p style={{fontSize:'20px'}}>Additional perks include:</p>
               <ul>
-                <li>Free self-parking.</li>
-                <li>A 24-hour front desk and barbecues.</li>
+                <li style={{fontSize:'20px'}}>Free self-parking.</li>
+                <li style={{fontSize:'20px'}}>A 24-hour front desk and barbecues.</li>
               </ul>
-              <p>Room features</p>
-              <p>All 25 individually furnished rooms have comforts such as air conditioning, as well as amenities such as free WiFi.</p>
-              <p>Other amenities include:</p>
+              <p style={{fontSize:'20px'}}>Room features</p>
+              <p style={{fontSize:'20px'}}>All 25 individually furnished rooms have comforts such as air conditioning, as well as amenities such as free WiFi.</p>
+              <p style={{fontSize:'20px'}}>Other amenities include:</p>
               <ul>
-                <li>Sofa, beds and free extra futons.</li>
-                <li>Shower/bath combinations and shampoo.</li>
-                <li>32-inch flat-screen TVs with cable channels.</li>
-                <li>Wardrobes/cupboards, balconies and eco-friendly cleaning products.</li>
+                <li style={{fontSize:'20px'}}>Sofa, beds and free extra futons.</li>
+                <li style={{fontSize:'20px'}}>Shower/bath combinations and shampoo.</li>
+                <li style={{fontSize:'20px'}}>32-inch flat-screen TVs with cable channels.</li>
+                <li style={{fontSize:'20px'}}>Wardrobes/cupboards, balconies and eco-friendly cleaning products.</li>
               </ul>
               </div>
               )}
             </div>
-            <button className='seemore' onClick={toggleExpanded}>
+            <button style={{fontSize:'20px'}} className='seemore' onClick={toggleExpanded}>
               {isExpanded ? 'See Less' : 'See More'}
             </button>
             </div>
@@ -121,7 +121,7 @@ function AboutProperty() {
             </div>
             <div className="col">
               <h5>Language</h5>
-              <p>English</p>
+              <p style={{fontSize:'20px'}}>English</p>
             </div>
         </div>
         </div>

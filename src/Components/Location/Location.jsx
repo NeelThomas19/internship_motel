@@ -48,33 +48,33 @@ function Location() {
       <div class="col-6">
         <h4>About this area</h4>
         <h5>Wildwood</h5>
-        <p>Located in Wildwood, Searay Motel is near the beach. Cape May National Wildlife Refuge and Stone Harbor Bird Sanctuary reflect the area's natural beauty and area attractions include Morey's Piers and Doo Wop Experience. Adventure Pier and Raging Waters Water Park are also worth visiting.</p>
+        <p style={{fontSize:'20px'}}>Located in Wildwood, Searay Motel is near the beach. Cape May National Wildlife Refuge and Stone Harbor Bird Sanctuary reflect the area's natural beauty and area attractions include Morey's Piers and Doo Wop Experience. Adventure Pier and Raging Waters Water Park are also worth visiting.</p>
       </div>
       <div class="col-6">
       <div class="container">
         <div class="row">
           <div class="col-9">Maps</div>
-          <div class="col-5 "><ImLocation/><span style={{fontSize:'18px', fontWeight:'bold'}}>What's Nearby</span>
+          <div class="col-5 "><ImLocation style={{fontSize:'23px'}}/><span style={{fontSize:'28px', fontWeight:'bold'}}>What's Nearby</span>
           <br />
-          <p><span className='nearby'>Wildwood Beach</span> - 1 min walk</p>
-          <p><span className='nearby'>Wildwood Boardwalk</span> - 2 min walk</p>
-          <p><span className='nearby'>Wildwoods Convention Center</span> - 6 min walk</p>
-          <p><span className='nearby'>Doo Wop Experience</span> - 6 min walk</p>
-          <p><span className='nearby'>Morey's Piers</span> - 10 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Wildwood Beach</span> - 1 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Wildwood Boardwalk</span> - 2 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Wildwoods Convention Center</span> - 6 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Doo Wop Experience</span> - 6 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Morey's Piers</span> - 10 min walk</p>
           </div>
-          <div class="col-5"><IoRestaurant/><span  style={{fontSize:'18px', fontWeight:'bold'}}>Restaurants</span>
+          <div class="col-5"><IoRestaurant style={{fontSize:'23px'}}/><span  style={{fontSize:'28px', fontWeight:'bold'}}>Restaurants</span>
           <br />
-          <p><span className='nearby'>Mudhen Brewing</span> - 9 min walk</p>
-          <p><span className='nearby'>Doo Wop Diner</span> - 11 min walk</p>
-          <p><span className='nearby'>Mack's Pizza</span> - 10 min walk</p>
-          <p><span className='nearby'>Dogtooth Bar & Grill</span> - 9 min walk</p>
-          <p><span className='nearby'>Olympic Flame Restaurant</span> - 10 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Mudhen Brewing</span> - 9 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Doo Wop Diner</span> - 11 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Mack's Pizza</span> - 10 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Dogtooth Bar & Grill</span> - 9 min walk</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'>Olympic Flame Restaurant</span> - 10 min walk</p>
           </div>
         </div>
-        <div className="row">
-        <div class="col-5 "><AiFillCar/><span style={{fontSize:'18px', fontWeight:'bold'}}>Getting around</span>
+        <div className="row" >
+        <div class="col-5 "><AiFillCar style={{fontSize:'23px'}}/><span style={{fontSize:'28px', fontWeight:'bold'}}>Getting around</span>
           <br />
-          <p><span className='nearby'><BsFillAirplaneFill />Atlantic City, NJ (ACY-Atlantic City Intl.)</span> - 48 min drive</p>
+          <p style={{fontSize:'20px'}}><span className='nearby'><BsFillAirplaneFill style={{fontSize:'15px'}}/>Atlantic City, NJ (ACY-Atlantic City Intl.)</span> - 48 min drive</p>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
     /* background-image: url('C:/Users/neelt/OneDrive/Documents/Projects/SeaRay-Motel/public/images/308612485.jpg'); */
     background-size: cover;
     background-position: center;
-    min-height: 50vh;
+    min-height: 40vh;
     overflow: hidden;
     position: relative;
     height: max-content;
@@ -35,4 +35,12 @@
   p {
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  h4{
+    font-size: 28px;
+  }
+
+  h5{
+    font-size: 28px;
   }
