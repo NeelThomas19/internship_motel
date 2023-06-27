@@ -1,22 +1,22 @@
 import React, {useEffect, useState} from 'react';
-import './Amenities.css';
-import { AiOutlineWifi } from "react-icons/ai";
+import './RoomAmenities.css';
+// import { AiOutlineWifi } from "react-icons/ai";
 import { MdLocalParking, MdFamilyRestroom, MdOutdoorGrill, MdAccessible, MdBalcony } from "react-icons/md";
 import { FaConciergeBell, FaBed, FaBath } from "react-icons/fa";
 import { BiPlusCircle, BiDrink } from "react-icons/bi";
-// import { BsFillFilePlayFill } from "react-icons/bs";
+import { BsFillFilePlayFill } from "react-icons/bs";
 
-function Amenities () {
+function RoomAmenities () {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.pageYOffset;
-      const amenitiesElement = document.getElementById('amenities');
+      const roomamenitiesElement = document.getElementById('roomamenities');
 
-      if (amenitiesElement) {
-        const elementOffsetTop = amenitiesElement.offsetTop;
-        const elementHeight = amenitiesElement.offsetHeight;
+      if (roomamenitiesElement) {
+        const elementOffsetTop = roomamenitiesElement.offsetTop;
+        const elementHeight = roomamenitiesElement.offsetHeight;
 
         // Calculate the visible range based on element position and window height
         const visibleRangeStart = scrollPosition + window.innerHeight * 0.2;
@@ -34,61 +34,8 @@ function Amenities () {
     };
   }, []);
   return (
-    <div id='amenities' className={`amenities ${isVisible ? 'visible' : ''}`}>
-      <div className='container text-center'>
-      <div className="row">
-        <div className="col-12">
-          <h4>Property Ameniities</h4>
-            <div className='row row-cols-4'>
-            <div class="col ">
-            </div>
-            <div className="col-4">
-            <h5><AiOutlineWifi/>Internet</h5>
-            <ul className='clean'>
-              <li>Available in all rooms: Free WiFi</li>
-              <li>Available in some public areas: Free WiFi</li>
-            </ul>
-            <h5><MdLocalParking/>Parking and Public Transport</h5>
-            <ul className='distancing'>
-              <li>Free self parking on site</li>
-              <li>Limited on-site parking(max. 1 space per unit)</li>
-            </ul>
-            <h5><MdFamilyRestroom/>Family Friendly</h5>
-            <ul>
-              <li>Microwave</li>
-              <li>Fridge</li>
-              <li>Sofa bed</li>
-            </ul>
-            <h5><FaConciergeBell/>Guest Service</h5>
-            <ul>
-              <li>24-hour front desk</li>
-            </ul>
-            <br/>
-        </div>
-            <div className="col-4">
-            <h5><MdOutdoorGrill/>Outdoors</h5>
-            <ul className='clean'>
-              <li>BBQ Grills</li>
-            </ul>
-            <h5><MdAccessible/>Accessibility</h5>
-            <ul className='distancing'>
-              <li>If you have any requests for specific accesibility needs, please contact the property using the information on the reservation confirmation received after booking.</li>
-              <li>This property does not have any lifts</li>
-              <li>Handrails in stairwells</li>
-              <li>Upper floors accessible by stairs only</li>
-              <li>Well-lit path to entrance</li>
-            </ul>
-            <h5><BiPlusCircle/>More</h5>
-            <ul>
-              <li>Designated smoking areas</li>
-            </ul>
-            <br/>
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      {/* <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
+    <div id='roomamenities' className={`roomamenities ${isVisible ? 'visible' : ''}`}>
+      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className='container text-center'>
       <div className="row">
         <div className="col-12">
@@ -146,9 +93,9 @@ function Amenities () {
       </div>
       </div>
       </div>
-      </div> */}
       </div>
+    </div>
   )
 }
 
-export default Amenities
+export default RoomAmenities

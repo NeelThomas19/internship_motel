@@ -1,11 +1,11 @@
-.policies{
+.feedback{
     /* background-color: rgb(183, 213, 152); */
     height: max-content;
     padding: 6px;
     margin-top: 0px;
 }
 
-.policies .container{
+.feedback .container{
   position: relative;
   z-index: 2;
   transform: translateZ(0);
@@ -13,33 +13,9 @@
   transition: transform 0.5s ease-in;
 }
 
-.policies.visible .container{
+.feedback.visible .container{
   transform: scale(1) ;
 }
-
-.faq-question {
-    display: flex;
-    align-items: center;
-    background: transparent;
-    border: none;
-    padding: 0;
-    position: relative;
-    font-size: larger;
-    font-weight: bolder;
-  }
-
-  .arrow {
-    margin-right: 8px;
-    width: 8px;
-    height: 8px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
-    transition: transform 0.3s;
-  }
-
-  .arrow.active {
-    transform: rotate(45deg);
-  }
 
   .review-form {
     max-width: 400px;

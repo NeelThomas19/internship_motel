@@ -1,0 +1,56 @@
+.FAQ{
+    /* background-color: rgb(183, 213, 152); */
+    background-size: cover;
+    background-position: center;
+    min-height: 23vh;
+    overflow: hidden;
+    position: relative;
+    height: max-content;
+    padding: 0px;
+    padding-bottom: 0px;
+    opacity: 0; /* Initially hide the component */
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.9s ease-in-out;
+    color: black;
+}
+
+.FAQ.visible{
+  opacity: 1; /* Show the component with a smooth transition */
+  transform: translateY(0);
+}
+
+.FAQ .container{
+  position: relative;
+  z-index: 2;
+  transform: translateZ(0);
+  transform: scale(0);
+  transition: transform 0.5s ease-in;
+}
+
+.FAQ.visible .container{
+  transform: scale(1) ;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    font-size: larger;
+    font-weight: bolder;
+  }
+
+  .arrow {
+    margin-right: 8px;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: transform 0.3s;
+  }
+
+  .arrow.active {
+    transform: rotate(45deg);
+  }

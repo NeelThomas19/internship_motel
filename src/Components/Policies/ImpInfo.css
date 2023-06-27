@@ -1,0 +1,32 @@
+.impinfo{
+    /* background-color: rgb(183, 213, 152); */
+    background-size: cover;
+    background-position: center;
+    min-height: 43vh;
+    overflow: hidden;
+    position: relative;
+    height: max-content;
+    padding: 0px;
+    padding-bottom: 10px;
+    opacity: 0; /* Initially hide the component */
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.9s ease-in-out;
+    color: black;
+}
+
+.impinfo.visible{
+    opacity: 1; /* Show the component with a smooth transition */
+    transform: translateY(0);
+}
+
+.impinfo .container {
+    position: relative;
+    z-index: 2;
+    transform: translateZ(0);
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .impinfo.visible .container {
+    transform: scale(1);
+  }

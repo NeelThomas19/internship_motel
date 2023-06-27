@@ -1,20 +1,21 @@
-.amenities{
+.roomamenities{
     /* background-color: rgb(159, 222, 222); */
     height: max-content;
+    min-height: 50vh;
     padding: 30px;
-    padding-bottom: 5px;
     opacity: 0; /* Initially hide the component */
     transform: translateY(20px);
     transition: opacity 0.5s ease-in, transform 0.9s ease-in;
     color: black;
+    margin-bottom: 2px;
 }
 
-.amenities.visible{
+.roomamenities.visible{
     opacity: 1;
     transform: translateY(0);
 }
 
-.amenities .container{
+.roomamenities .container{
     position: relative;
     z-index: 2;
     transform: translateZ(0);
@@ -22,7 +23,7 @@
     transition: transform 0.5s ease-in;
 }
 
-.amenities.visible .container{
+.roomamenities.visible .container{
     transform: scale(1) ;
 }
 

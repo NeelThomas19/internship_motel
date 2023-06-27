@@ -31,7 +31,7 @@ function Overview(){
 
         // Calculate the visible range based on element position and window height
         const visibleRangeStart = scrollPosition + window.innerHeight * 0.4;
-        const visibleRangeEnd = scrollPosition + window.innerHeight * 0.6;
+        const visibleRangeEnd = scrollPosition + window.innerHeight * 0.9;
 
         // Check if the element is within the visible range
         const isVisible = elementOffsetTop + elementHeight > visibleRangeStart && elementOffsetTop < visibleRangeEnd;
