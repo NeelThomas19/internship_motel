@@ -129,18 +129,18 @@ function Cleaning() {
       <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className="row">
         <div className="col-12">
-          <h4>CLeaning and safety practices</h4>
+          <h4 style={{fontSize:'44px'}}>CLeaning and safety practices</h4>
             <div className='row row-cols-4'>
             <div class="col ">
             </div>
             <div className="col-4">
-            <h5><GiBroom />Enhanced cleaning measures</h5>
+            <h5 style={{fontSize:'29px'}}><GiBroom />Enhanced cleaning measures</h5>
             <ul className='clean'>
               <li style={{fontSize:'20px'}}>Disinfectant is ued to clean the property.</li>
               <li style={{fontSize:'20px'}}>High-touched surfaces are cleaned and disinfected.</li>
               <li style={{fontSize:'20px'}}>Sheets and towels are washed at 60&deg;C or hotter.</li>
             </ul>
-            <h5><MdSocialDistance />Social Distancing</h5>
+            <h5 style={{fontSize:'29px'}}><MdSocialDistance />Social Distancing</h5>
             <ul className='distancing'>
               <li style={{fontSize:'20px'}}>Protective shields in place at main contact areas.</li>
             </ul>

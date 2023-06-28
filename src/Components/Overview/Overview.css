@@ -33,18 +33,21 @@
   height: max-content;
   background-size: cover;
   background-position: center;
-  min-height: 67vh;
+  min-height: 48vh;
   overflow: hidden;
   position: relative;
-  padding: 40px;
+  padding: 0px;
   padding-bottom: 60px;
   opacity: 0; /* Initially hide the component */
-  transition: opacity 0.8s ease;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.9s ease-in-out;
   color: black;
+  margin-top: 40px;
 }
 
 .overview.visible {
   opacity: 1; /* When the component is visible, set opacity to 1 */
+  transform: translateY(0);
 }
 
 .overview .container {
@@ -58,46 +61,18 @@
 .overview.visible .container {
   transform: scale(1);
 }
+
 .overview h4 {
-  font-size: 30px;
-  padding-top: 30px;
-  transition: opacity 0.5s ease; /* Add transition effect for heading */
+  font-size: 44px;
   font-family: 'Merienda', cursive;
 }
 
-.overview p.card-text {
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: opacity 0.5s ease; /* Add transition effect for paragraph */
-  font-family: 'Ubuntu Mono', monospace;
+.overview .col-6{
+  margin-top: 40px;
 }
 
-.overview .explore {
-  color: black;
-  margin-top: 0px;
-  transition: opacity 0.5s ease; /* Add transition effect for explore section */
-}
-
-.overview .explore .row {
-  margin-bottom: 15px;
-}
-
-.overview .explore .col-md-4 {
-  display: flex;
-  align-items: center;
-  /* font-size: 22px; */
-  transition: opacity 0.5s ease; /* Add transition effect for explore section */
-  font-family: 'Ubuntu Mono', monospace;
-}
-
-.offset-md-4{
-  font-size: 20px;
-}
-
-.card-text{
-  color: black;
+.overview h6{
+  font-size: 24px;
 }
 
 

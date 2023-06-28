@@ -83,12 +83,12 @@ function AboutProperty() {
       <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className="row">
         <div className="col-12">
-          <h4>About this property</h4>
+          <h4 style={{fontSize:'44px'}}>About this property</h4>
             <div className='row row-cols-4'>
             <div class="col ">
             </div>
             <div className="col">
-            <h5>SeaRay Motel</h5>
+            <h5 style={{fontSize:'29px'}}>SeaRay Motel</h5>
             <p style={{fontSize:'20px'}}>Motel near wildwood Boardwalk</p>
             <div className={isExpanded ? 'content expanded' : 'content'}>
             {isExpanded && (
@@ -120,7 +120,7 @@ function AboutProperty() {
             <div class="col ">
             </div>
             <div className="col">
-              <h5>Language</h5>
+              <h5 style={{fontSize:'29px'}}>Language</h5>
               <p style={{fontSize:'20px'}}>English</p>
             </div>
         </div>

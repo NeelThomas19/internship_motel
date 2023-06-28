@@ -1,10 +1,11 @@
 .room-availability {
   max-width: 400px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 30px;
   background-color: #79bdd7;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 0px;
 }
 
 .room-availability__title {

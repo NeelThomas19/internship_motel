@@ -42,6 +42,7 @@
     transform: translateY(20px);
     transition: opacity 0.5s ease-in-out, transform 0.9s ease-in-out;
     color: black;
+    margin-top: 0px;
   }
   .location.visible {
     opacity: 1; /* Show the component with a smooth transition */
@@ -111,14 +112,14 @@
     padding: 0;
   }
 
-  h4{
+  .location h4{
+    font-size: 44px;
     font-family: 'Merienda', cursive;
   }
 
-  h5{
-    font-size: 24px;
+  .location h5{
+    font-size: 29px;
   }
-  
   /* Styles for the parallax scrolling effect */
   /* .expanded {
     height: auto !important;

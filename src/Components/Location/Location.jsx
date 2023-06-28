@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Location.css';
-import { ImLocation } from "react-icons/im";
 import { IoRestaurant } from "react-icons/io5";
 import { AiFillCar } from "react-icons/ai";
 import { BsFillAirplaneFill } from "react-icons/bs";
+import { GrMapLocation } from "react-icons/gr";
 // import { GiBroom } from "react-icons/gi";
 // import { MdSocialDistance } from "react-icons/md";
 
@@ -26,7 +26,7 @@ function Location() {
 
         // Calculate the visible range based on element position and window height
         const visibleRangeStart = scrollPosition + window.innerHeight * 0.3;
-        const visibleRangeEnd = scrollPosition + window.innerHeight * 0.7;
+        const visibleRangeEnd = scrollPosition + window.innerHeight * 0.88;
 
         // Check if the element is within the visible range
         const isVisible = elementOffsetTop + elementHeight > visibleRangeStart && elementOffsetTop < visibleRangeEnd;
@@ -48,13 +48,13 @@ function Location() {
       <div class="col-6">
         <h4>About this area</h4>
         <h5>Wildwood</h5>
-        <p style={{fontSize:'20px'}}>Located in Wildwood, Searay Motel is near the beach. Cape May National Wildlife Refuge and Stone Harbor Bird Sanctuary reflect the area's natural beauty and area attractions include Morey's Piers and Doo Wop Experience. Adventure Pier and Raging Waters Water Park are also worth visiting.</p>
+        <p style={{fontSize:'25px'}}>Located in Wildwood, Searay Motel is near the beach. Cape May National Wildlife Refuge and Stone Harbor Bird Sanctuary reflect the area's natural beauty and area attractions include Morey's Piers and Doo Wop Experience. Adventure Pier and Raging Waters Water Park are also worth visiting.</p>
       </div>
       <div class="col-6">
       <div class="container">
         <div class="row">
           <div class="col-9">Maps</div>
-          <div class="col-5 "><ImLocation style={{fontSize:'23px'}}/><span style={{fontSize:'28px', fontWeight:'bold'}}>What's Nearby</span>
+          <div class="col-5 "><GrMapLocation style={{fontSize:'23px'}}/><span style={{fontSize:'24px', fontWeight:'bold'}}>What's Nearby</span>
           <br />
           <p style={{fontSize:'20px'}}><span className='nearby'>Wildwood Beach</span> - 1 min walk</p>
           <p style={{fontSize:'20px'}}><span className='nearby'>Wildwood Boardwalk</span> - 2 min walk</p>

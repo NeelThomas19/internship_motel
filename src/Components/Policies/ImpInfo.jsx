@@ -34,12 +34,12 @@ const ImpInfo = () => {
       <div className='container text-center'>
       <div className="row">
         <div className="col-12">
-          <h4>Important Information</h4>
+          <h4 style={{fontSize:'44px'}}>Important Information</h4>
             <div className='row row-cols-4'>
             <div class="col ">
             </div>
             <div className="col-5">
-            <h5>Fees</h5>
+            <h5 style={{fontSize:'29px'}}>Fees</h5>
             <ul className='clean'>
               <li style={{fontSize:'20px'}}>You will be asked to pay following charges at the property:
                 <ul>
@@ -49,7 +49,7 @@ const ImpInfo = () => {
               </li>
               <li style={{fontSize:'20px'}}>We have incuded all charges provided to us by the property.</li>
             </ul>
-            <h5>You need to know</h5>
+            <h5 style={{fontSize:'29px'}}>You need to know</h5>
             <ul className='distancing'>
               <li style={{fontSize:'20px'}}>Extra-person charges may apply and vary depending on property policy</li>
               <li style={{fontSize:'20px'}}>Government-issued photo identification and a credit card, debit card or cash deposit may be required at check-in for incidental charges</li>
@@ -57,7 +57,7 @@ const ImpInfo = () => {
               <li style={{fontSize:'20px'}}>This property accepts credit cards; cash is not accepted</li>
               <li style={{fontSize:'20px'}}>Safety features at this property include a smoke detector</li>
             </ul>
-            <h5>We should mention</h5>
+            <h5 style={{fontSize:'29px'}}>We should mention</h5>
             <ul>
               <li style={{fontSize:'20px'}}>This property does not have any lifts</li>
             </ul>

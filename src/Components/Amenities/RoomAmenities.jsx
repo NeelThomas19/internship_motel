@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './RoomAmenities.css';
 // import { AiOutlineWifi } from "react-icons/ai";
-import { MdLocalParking, MdFamilyRestroom, MdOutdoorGrill, MdAccessible, MdBalcony } from "react-icons/md";
-import { FaConciergeBell, FaBed, FaBath } from "react-icons/fa";
+import { MdBalcony } from "react-icons/md";
+import { FaBed, FaBath } from "react-icons/fa";
 import { BiPlusCircle, BiDrink } from "react-icons/bi";
 import { BsFillFilePlayFill } from "react-icons/bs";
 
@@ -39,12 +39,12 @@ function RoomAmenities () {
       <div className='container text-center'>
       <div className="row">
         <div className="col-12">
-          <h4>Room Ameniities</h4>
+          <h4 style={{fontSize:'44px'}}>Room Ameniities</h4>
             <div className='row row-cols-4'>
             <div class="col ">
             </div>
             <div className="col-4">
-            <h5><FaBed/>Bedroom</h5>
+            <h5 style={{fontSize:'29px'}}><FaBed/>Bedroom</h5>
             <ul className='clean'>
               <li style={{fontSize:'20px'}}>Air Conditioning</li>
               <li style={{fontSize:'20px'}}>Bed Sheets</li>
@@ -52,7 +52,7 @@ function RoomAmenities () {
               <li style={{fontSize:'20px'}}>Free extra-futon mattress</li>
               <li style={{fontSize:'20px'}}>Heating</li>
             </ul>
-            <h5><FaBath/>Bathroom</h5>
+            <h5 style={{fontSize:'29px'}}><FaBath/>Bathroom</h5>
             <ul className='distancing'>
               <li style={{fontSize:'20px'}}>Shampoo</li>
               <li style={{fontSize:'20px'}}>Shower/bath combination</li>
@@ -60,7 +60,7 @@ function RoomAmenities () {
               <li style={{fontSize:'20px'}}>Toilet paper</li>
               <li style={{fontSize:'20px'}}>Towels</li>
             </ul>
-            <h5><BsFillFilePlayFill/>Entertainment</h5>
+            <h5 style={{fontSize:'29px'}}><BsFillFilePlayFill/>Entertainment</h5>
             <ul>
               <li style={{fontSize:'20px'}}>32-inch flat-screen TV</li>
               <li style={{fontSize:'20px'}}>TV channels</li>
@@ -68,18 +68,18 @@ function RoomAmenities () {
             <br/>
         </div>
             <div className="col-4">
-            <h5><BiDrink/>Food and Drinks</h5>
+            <h5 style={{fontSize:'29px'}}><BiDrink/>Food and Drinks</h5>
             <ul className='clean'>
               <li style={{fontSize:'20px'}}>Coffee/Tea maker</li>
               <li style={{fontSize:'20px'}}>Microwave</li>
               <li style={{fontSize:'20px'}}>Paper Towels</li>
               <li style={{fontSize:'20px'}}>Fridge</li>
             </ul>
-            <h5><MdBalcony/>Outdoor Space</h5>
+            <h5 style={{fontSize:'29px'}}><MdBalcony/>Outdoor Space</h5>
             <ul className='distancing'>
               <li style={{fontSize:'20px'}}>Balcony</li>
             </ul>
-            <h5><BiPlusCircle/>More</h5>
+            <h5 style={{fontSize:'29px'}}><BiPlusCircle/>More</h5>
             <ul>
               <li style={{fontSize:'20px'}}>Desk.</li>
               <li style={{fontSize:'20px'}}>Eco-friendly cleaning products provided</li>

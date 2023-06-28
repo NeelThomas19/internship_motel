@@ -63,7 +63,7 @@ const FAQ = () => {
       <div className='container text-center'>
       <div className="row">
         <div className="col-12">
-          <h4>Frequently asked questions</h4>
+          <h4 style={{fontSize:'44px'}}>Frequently asked questions</h4>
             <div className='row row-cols-4'>
             <div class="col ">
             </div>

@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import './Amenities.css';
 import { AiOutlineWifi } from "react-icons/ai";
-import { MdLocalParking, MdFamilyRestroom, MdOutdoorGrill, MdAccessible, MdBalcony } from "react-icons/md";
-import { FaConciergeBell, FaBed, FaBath } from "react-icons/fa";
-import { BiPlusCircle, BiDrink } from "react-icons/bi";
-// import { BsFillFilePlayFill } from "react-icons/bs";
+import { MdLocalParking, MdFamilyRestroom, MdOutdoorGrill, MdAccessible } from "react-icons/md";
+import { FaConciergeBell } from "react-icons/fa";
+import { BiPlusCircle } from "react-icons/bi";
 
 function Amenities () {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,39 +37,39 @@ function Amenities () {
       <div className='container text-center'>
       <div className="row">
         <div className="col-12">
-          <h4>Property Ameniities</h4>
+          <h4 style={{fontSize:'44px'}}>Property Ameniities</h4>
             <div className='row row-cols-4'>
             <div class="col ">
             </div>
             <div className="col-4">
-            <h5><AiOutlineWifi/>Internet</h5>
+            <h5 style={{fontSize:'29px'}}><AiOutlineWifi/>Internet</h5>
             <ul className='clean'>
               <li style={{fontSize:'20px'}}>Available in all rooms: Free WiFi</li>
               <li style={{fontSize:'20px'}}>Available in some public areas: Free WiFi</li>
             </ul>
-            <h5><MdLocalParking/>Parking and Public Transport</h5>
+            <h5 style={{fontSize:'29px'}}><MdLocalParking/>Parking and Public Transport</h5>
             <ul className='distancing'>
               <li style={{fontSize:'20px'}}>Free self parking on site</li>
               <li style={{fontSize:'20px'}}>Limited on-site parking(max. 1 space per unit)</li>
             </ul>
-            <h5><MdFamilyRestroom/>Family Friendly</h5>
+            <h5 style={{fontSize:'29px'}}><MdFamilyRestroom/>Family Friendly</h5>
             <ul>
               <li style={{fontSize:'20px'}}>Microwave</li>
               <li style={{fontSize:'20px'}}>Fridge</li>
               <li style={{fontSize:'20px'}}>Sofa bed</li>
             </ul>
-            <h5><FaConciergeBell/>Guest Service</h5>
+            <h5 style={{fontSize:'29px'}}><FaConciergeBell/>Guest Service</h5>
             <ul>
               <li style={{fontSize:'20px'}}>24-hour front desk</li>
             </ul>
             <br/>
         </div>
             <div className="col-4">
-            <h5><MdOutdoorGrill/>Outdoors</h5>
+            <h5 style={{fontSize:'29px'}}><MdOutdoorGrill/>Outdoors</h5>
             <ul className='clean'>
               <li style={{fontSize:'20px'}}>BBQ Grills</li>
             </ul>
-            <h5><MdAccessible/>Accessibility</h5>
+            <h5 style={{fontSize:'29px'}}><MdAccessible/>Accessibility</h5>
             <ul className='distancing'>
               <li style={{fontSize:'20px'}}>If you have any requests for specific accesibility needs, please contact the property using the information on the reservation confirmation received after booking.</li>
               <li style={{fontSize:'20px'}}>This property does not have any lifts</li>
@@ -78,7 +77,7 @@ function Amenities () {
               <li style={{fontSize:'20px'}}>Upper floors accessible by stairs only</li>
               <li style={{fontSize:'20px'}}>Well-lit path to entrance</li>
             </ul>
-            <h5><BiPlusCircle/>More</h5>
+            <h5 style={{fontSize:'29px'}}><BiPlusCircle/>More</h5>
             <ul>
               <li style={{fontSize:'20px'}}>Designated smoking areas</li>
             </ul>
