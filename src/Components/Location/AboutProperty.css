@@ -31,8 +31,8 @@
   }
 
   .aboutProperty h4,
-  h5,
-  p {
+  .aboutProperty h5,
+  .aboutProperty p {
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
@@ -49,8 +49,10 @@
 
   h4{
     font-size: 28px;
+    /* color: #c6ea1a; */
   }
 
   h5{
     font-size: 28px;
+    /* color: #c6ea1a; */
   }

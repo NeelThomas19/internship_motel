@@ -62,7 +62,7 @@ function Location() {
           <p style={{fontSize:'20px'}}><span className='nearby'>Doo Wop Experience</span> - 6 min walk</p>
           <p style={{fontSize:'20px'}}><span className='nearby'>Morey's Piers</span> - 10 min walk</p>
           </div>
-          <div class="col-5"><IoRestaurant style={{fontSize:'23px'}}/><span  style={{fontSize:'28px', fontWeight:'bold'}}>Restaurants</span>
+          <div class="col-5"><IoRestaurant style={{fontSize:'23px', color:'black'}}/><span  style={{fontSize:'28px', fontWeight:'bold'}}>Restaurants</span>
           <br />
           <p style={{fontSize:'20px'}}><span className='nearby'>Mudhen Brewing</span> - 9 min walk</p>
           <p style={{fontSize:'20px'}}><span className='nearby'>Doo Wop Diner</span> - 11 min walk</p>

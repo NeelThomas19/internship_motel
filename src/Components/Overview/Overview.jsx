@@ -91,7 +91,7 @@ function Overview(){
                 </div>
                 <div className="row">
                     <div className="col-6">
-                        <h6 style={{textAlign:'start'}}><GrMapLocation style={{fontSize:'28px'}}/>Morey's Piers</h6>
+                        <h6 style={{textAlign:'start'}}><GrMapLocation style={{fontSize:'28px', color:'#c6ea1a'}}/>Morey's Piers</h6>
                     </div>
                     <div className="col-6">
                         <h6 style={{textAlign:'start'}}>10 min walk</h6>
@@ -99,7 +99,7 @@ function Overview(){
                 </div>
                 <div className="row">
                     <div className="col-6">
-                        <h6 style={{textAlign:'start'}}><GiCommercialAirplane style={{fontSize:'28px'}}/>Cape May, NJ(WWD-Cape May County)</h6>
+                        <h6 style={{textAlign:'start'}}><GiCommercialAirplane style={{fontSize:'28px', color:'black'}}/>Cape May, NJ(WWD-Cape May County)</h6>
                     </div>
                     <div className="col-6">
                         <h6 style={{textAlign:'start'}}>15 min drive</h6>
