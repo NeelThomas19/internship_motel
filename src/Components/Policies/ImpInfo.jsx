@@ -30,8 +30,8 @@ const ImpInfo = () => {
     }, []);
   return (
     <div id='impinfo' className={`impinfo ${isVisible ? 'visible' : ''}`}>
-      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className='container text-center'>
+      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className="row">
         <div className="col-12">
           <h4 style={{fontSize:'44px'}}>Important Information</h4>

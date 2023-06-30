@@ -25,7 +25,7 @@ function Location() {
         const elementHeight = locationElement.offsetHeight;
 
         // Calculate the visible range based on element position and window height
-        const visibleRangeStart = scrollPosition + window.innerHeight * 0.3;
+        const visibleRangeStart = scrollPosition + window.innerHeight * 0.2;
         const visibleRangeEnd = scrollPosition + window.innerHeight * 0.88;
 
         // Check if the element is within the visible range

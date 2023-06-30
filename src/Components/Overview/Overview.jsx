@@ -35,7 +35,7 @@ function Overview(){
         const elementHeight = overviewElement.offsetHeight;
 
         // Calculate the visible range based on element position and window height
-        const visibleRangeStart = scrollPosition + window.innerHeight * 0.26;
+        const visibleRangeStart = scrollPosition + window.innerHeight * 0.2;
         const visibleRangeEnd = scrollPosition + window.innerHeight * 0.9;
 
         // Check if the element is within the visible range
@@ -53,7 +53,7 @@ function Overview(){
     <div id='overview' className={`overview ${isVisible ? 'visible' : ''}`}>
       <div className="row">
             <div className="col-6" style={{paddingLeft:'124px'}}>
-                <h4 style={{paddingRight:'195px'}}>Popular Amenities</h4>
+                <h4 style={{paddingRight:'105px'}}>Popular Amenities</h4>
                 <div className="row">
                     <div className="col-6">
                     <h6 style={{textAlign:'start'}}><TbParking style={{fontSize:'28px'}}/>Parking Included</h6>

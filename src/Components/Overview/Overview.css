@@ -1,32 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-/* .overview{
-    background-color: antiquewhite;
-    height: max-content;
-}
-
-.justify-content-around{
-    padding-top: 72px;
-    font-size: larger;
-}
-
-.explore{
-    width: 30rem;
-} */
-
-/* .parallax {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  } */
-
-  /* Add the following CSS styles to your Overview.css file */
 
 .overview {
   /* background-image: url('C:/Users/neelt/OneDrive/Documents/Projects/SeaRay-Motel/public/images/308634967.jpg'); */
@@ -36,13 +9,21 @@
   min-height: 48vh;
   overflow: hidden;
   position: relative;
-  padding: 0px;
   padding-bottom: 60px;
+  margin-bottom: 30px;
   opacity: 0; /* Initially hide the component */
   transform: translateY(20px);
   transition: opacity 0.5s ease-in-out, transform 0.9s ease-in-out;
   color: black;
-  margin-top: 40px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 70vh;
+  margin-left: 145px;
+  box-shadow: 8px 8px 15px rgba(27, 208, 232, 0.896);
 }
 
 .overview.visible {

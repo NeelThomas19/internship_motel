@@ -35,7 +35,7 @@ a:active{
     color: #000000; /* Set your desired hover color */
   }
 
-a:active{
+.nav-item a:active{
     text-decoration: underline;
 }
 

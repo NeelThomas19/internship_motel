@@ -59,8 +59,8 @@ const FAQ = () => {
 
   return (
     <div id='FAQ' className={`FAQ ${isVisible ? 'visible' : ''}`}>
-              <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className='container text-center'>
+              <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className="row">
         <div className="col-12">
           <h4 style={{fontSize:'44px'}}>Frequently asked questions</h4>
@@ -84,6 +84,7 @@ const FAQ = () => {
       </div>
       </div>
       </div>
+      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       </div>
     </div>
   )

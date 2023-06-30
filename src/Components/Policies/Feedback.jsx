@@ -27,7 +27,6 @@ const ReviewForm = ({ onReviewSubmit }) => {
 
   return (
     <div id='feedback' className='feedback'>
-      <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className="review-form">
       <h2>Customer Review</h2>
       <form onSubmit={handleSubmit}>
