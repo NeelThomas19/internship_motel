@@ -129,7 +129,7 @@ function Cleaning() {
       <hr style={{height:'8px' , backgroundColor:'black', border:'none'}}/>
       <div className="row">
         <div className="col-12">
-          <h4 style={{fontSize:'44px'}}>CLeaning and safety practices</h4>
+          <h4 style={{fontSize:'44px'}}>Cleaning and safety practices</h4>
             <div className='row row-cols-4'>
             <div class="col ">
             </div>
