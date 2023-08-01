@@ -4,6 +4,7 @@ import { IoRestaurant } from "react-icons/io5";
 import { AiFillCar } from "react-icons/ai";
 import { BsFillAirplaneFill } from "react-icons/bs";
 import { GrMapLocation } from "react-icons/gr";
+import Maps from './Maps';
 // import { GiBroom } from "react-icons/gi";
 // import { MdSocialDistance } from "react-icons/md";
 
@@ -53,7 +54,9 @@ function Location() {
       <div class="col-6">
       <div class="container">
         <div class="row">
-          <div class="col-9">Maps</div>
+          <div class="col-9">
+          <Maps />
+          </div>
           <div class="col-5 "><GrMapLocation style={{fontSize:'23px'}}/><span style={{fontSize:'24px', fontWeight:'bold'}}>What's Nearby</span>
           <br />
           <p style={{fontSize:'20px'}}><span className='nearby'>Wildwood Beach</span> - 1 min walk</p>
