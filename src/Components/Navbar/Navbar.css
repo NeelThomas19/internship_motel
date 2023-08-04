@@ -33,10 +33,33 @@ a:active{
 
   .navbar-nav .nav-item .nav-link:hover {
     color: #000000; /* Set your desired hover color */
+    z-index: 999;
   }
 
 .nav-item a:active{
     text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #333; /* Change to desired background color for the navigation menu */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+
+  .navbar-collapse.show {
+    max-height: 1000px; /* Adjust to a value greater than the height of the navigation menu */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
